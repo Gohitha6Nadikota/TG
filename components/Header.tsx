@@ -78,7 +78,7 @@ function NavBar() {
                   Build your own voice agent
                 </h1>
                 <h2 className="text-black text-base font-medium leading-[19.36px] text-left p-2">
-                  It's free
+                  It&apos;s free
                 </h2>
               </button>
               <button className="w-[251px] h-[54px] top-[554px] left-[113px] gap-0 border border-black rounded-lg m-5 p-3">

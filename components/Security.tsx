@@ -20,7 +20,7 @@ function Security() {
         </h1>
         <p className="font-inter text-base font-normal leading-[21.78px] text-center">
           With robust internal audits and stringent data governance, we champion
-          the ethical use of AI, ensuring technology serves humanity's best
+          the ethical use of AI, ensuring technology serves humanity&apos;s best
           interests. Our commitment sets the foundation for Advanced General
           Intelligence (AGI) with integrity.
         </p>
