@@ -38,7 +38,7 @@ const faqs = [
 function FAQ() {
   const [activeIndex, setActiveIndex] = useState(null);
 
-  const toggleAnswer = (id) => {
+  const toggleAnswer = (id:any) => {
     setActiveIndex(id === activeIndex ? null : id);
   };
 
