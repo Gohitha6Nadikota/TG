@@ -17,6 +17,7 @@ export default function Home() {
       <TopContainer />
       <Header />
       <VideoPage />
+      <GPTcard/>
       <Sliders />
       <Capabilities />
       <Security />

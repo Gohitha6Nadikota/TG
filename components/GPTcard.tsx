@@ -1,76 +1,45 @@
-"use client";
-
-import React, { useRef, useEffect, useState } from "react";
+'use client'
+import React, { useState } from "react";
 import gsap from "gsap";
+import Explore from "./Explore";
+import Explore1 from "./Explore1";
 
 const GPTcard: React.FC = () => {
-  const card2Ref = useRef<HTMLDivElement>(null);
-  const touchStartXRef = useRef(0);
-  const touchEndXRef = useRef(0);
-  const [isCard2Visible, setCard2Visible] = useState(false);
+  const [isCard1Visible, setCard1Visible] = useState(true);
 
-  useEffect(() => {
-    const handleTouchStart = (e: TouchEvent) => {
-      touchStartXRef.current = e.changedTouches[0].screenX;
-    };
-
-    const handleTouchEnd = (e: TouchEvent) => {
-      touchEndXRef.current = e.changedTouches[0].screenX;
-      checkSwipeDirection();
-    };
-
-    const handleMouseDown = (e: MouseEvent) => {
-      touchStartXRef.current = e.screenX;
-    };
-
-    const handleMouseUp = (e: MouseEvent) => {
-      touchEndXRef.current = e.screenX;
-      checkSwipeDirection();
-    };
-
-    const checkSwipeDirection = () => {
-      if (touchEndXRef.current - touchStartXRef.current > 100) {
-        // threshold for swipe right
-        animateCardIn();
-      }
-    };
-
-    const animateCardIn = () => {
-      if (card2Ref.current) {
-        setCard2Visible(true);
-        gsap.fromTo(
-          card2Ref.current,
-          { x: "-100%" },
-          { x: "0%", duration: 0.5, ease: "power2.out" }
-        );
-      }
-    };
-
-    document.addEventListener("touchstart", handleTouchStart);
-    document.addEventListener("touchend", handleTouchEnd);
-    document.addEventListener("mousedown", handleMouseDown);
-    document.addEventListener("mouseup", handleMouseUp);
-
-    return () => {
-      document.removeEventListener("touchstart", handleTouchStart);
-      document.removeEventListener("touchend", handleTouchEnd);
-      document.removeEventListener("mousedown", handleMouseDown);
-      document.removeEventListener("mouseup", handleMouseUp);
-    };
-  }, []);
+  const handleCardClick = () => {
+    if (isCard1Visible) {
+      gsap.to("#card1", { opacity: 0, x: "-100%", duration: 0.5 });
+      gsap.fromTo(
+        "#card2",
+        { opacity: 0, x: "100%" },
+        { opacity: 1, x: "0%", duration: 0.5, ease: "power2.out" }
+      );
+    } else {
+      gsap.to("#card2", { opacity: 0, x: "-100%", duration: 0.5 });
+      gsap.fromTo(
+        "#card1",
+        { opacity: 0, x: "100%" },
+        { opacity: 1, x: "0%", duration: 0.5, ease: "power2.out" }
+      );
+    }
+    setCard1Visible(!isCard1Visible);
+  };
 
   return (
-    <div className="relative w-72 h-48">
-      <div className="absolute inset-0 flex items-center justify-center bg-white shadow-lg rounded-lg">
-        Card 1
+    <div className="relative mt-[350px]" onClick={handleCardClick}>
+      <div
+        id="card1"
+        className="absolute inset-0 flex items-center justify-center bg-white shadow-lg rounded-lg"
+      >
+        <Explore/>
       </div>
       <div
-        ref={card2Ref}
-        className={`absolute inset-0 flex items-center justify-center bg-white shadow-lg rounded-lg ${
-          isCard2Visible ? "" : "hidden"
-        }`}
+        id="card2"
+        className="absolute inset-0 flex items-center justify-center bg-white shadow-lg rounded-lg"
+        style={{ opacity: 0, pointerEvents: "none" }}
       >
-        Card 2
+        <Explore1/>
       </div>
     </div>
   );

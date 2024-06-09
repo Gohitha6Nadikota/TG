@@ -59,7 +59,7 @@ function Sliders() {
   };
 
   return (
-    <div className="md:max-w-[96vw] max-w-[75vw] m-0 p-0">
+    <div className="md:max-w-[96vw] max-w-[75vw] mt-[350px] p-0">
       <Slider {...settings}>
         {feature.map((feature, index) => (
           <FeatureBox

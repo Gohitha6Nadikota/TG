@@ -13,11 +13,11 @@ function Explore() {
   };
   return (
     <div className="">
-      <div className="w-[90vw] m-[50px] bg-[#FEECDF] flex flex-col md:flex-row-reverse md:justify-evenly rounded-2xl h-[600px]">
+      <div className="w-[90vw] m-[50px] bg-[#FEECDF] flex flex-col md:flex-row-reverse md:justify-evenly rounded-2xl min-h-[680px]">
         <div className="flex items-center justify-center ">
           <video
-            className="m-7"
-            style={{ maxWidth: "466px", maxHeight: "433px" }}
+            className="p-7"
+            style={{ maxWidth: "100%", maxHeight: "auto" }}
             controls
             autoPlay
             loop
@@ -36,8 +36,8 @@ function Explore() {
             </span>{" "}
             store
           </h1>
-          <ul className="flex flex-col list-disc p-4">
-            <li className="w-[329px]  font-inter text-base font-normal leading-[19.36px] text-left">
+          <ul className="flex flex-col list-disc p-7 space-y-4">
+            <li className="font-inter text-base font-normal leading-[19.36px] text-left">
               Interactive Communication: Engage in single or batch calls using
               TOINGG GPT.
             </li>
