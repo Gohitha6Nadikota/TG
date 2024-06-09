@@ -3,13 +3,10 @@ import Image from "next/image";
 function VideoPage() {
     return (
       <div className="flex justify-center items-center flex-col w-[100%]">
-        <h1
-          className="pt-[38px] left-[59px] font-inter text-base font-medium leading-[21.78px] text-center text-[#797979]"
-        >
+        <h1 className="pt-[38px] font-inter text-base font-medium leading-[21.78px] text-center text-[#797979] w-[100%]">
           Automate your agent with 5000+ integrations like
         </h1>
-
-        <div className="h-[200px] w-[100%] flex flex-row items-center justify-center space-x-4">
+        <div className="h-[200px] w-[80%] flex flex-row items-center justify-center space-x-3">
           <button>
             <Image
               src={"https://call.toingg.com/images/google-sheets-icon.svg"}
@@ -22,7 +19,7 @@ function VideoPage() {
             <Image
               src={"https://call.toingg.com/images/Calendly.svg"}
               alt={"calendly"}
-              width={40}
+              width={30}
               height={40}
             />
           </button>
@@ -30,7 +27,7 @@ function VideoPage() {
             <Image
               src={"https://call.toingg.com/images/HubSpot.svg"}
               alt={"hubspot"}
-              width={40}
+              width={30}
               height={40}
             />
           </button>
@@ -38,7 +35,7 @@ function VideoPage() {
             <Image
               src={"https://call.toingg.com/images/salesforce.svg"}
               alt={"salesforce"}
-              width={40}
+              width={30}
               height={40}
             />
           </button>
@@ -46,12 +43,12 @@ function VideoPage() {
             <Image
               src={"https://call.toingg.com/images/slack.svg"}
               alt={"slack"}
-              width={40}
+              width={30}
               height={40}
             />
           </button>
         </div>
-        <div className="w-[88vw] m-[6vw] ">
+        <div className="w-[88vw] p-[6vw] md:p-[2vw]">
           <iframe
             width="100%"
             height="500"

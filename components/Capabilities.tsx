@@ -43,9 +43,8 @@ function Capabilities() {
 
   return (
     <div>
-      <div className="flex justify-center items-center flex-col w-[100%] mt-5 bg-gradient-to-br from-orange-100 to-white ">
-        <h1>Scale with Enterprise-grade capabilities</h1>
-        <div style={{ maxWidth: "60vw", margin: "0 0", marginBottom: "30px" }}>
+      <div className="flex justify-center items-center flex-col w-[100%] mt-[100px] pt-5 bg-gradient-to-br from-orange-100 to-white rounded-lg">
+        <div className="md:max-w-[96vw] max-w-[75vw] m-0 p-0">
           <Slider {...settings}>
             {feature.map((feature, index) => (
               <CapabilityBox

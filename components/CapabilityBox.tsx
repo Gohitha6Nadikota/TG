@@ -12,8 +12,8 @@ const CapabilityBox: React.FC<CapabilityBoxProps> = ({
   image,
 }) => {
   return (
-    <div className="w-[100%] flex justify-center items-center flex-col space-y-2 m-5 border border-black h-[380px]  ">
-      <Image src={image} alt={title} width={40} height={40} />
+    <div className="w-[100%] flex justify-center items-center flex-col h-[500px] text-black p-3">
+      <Image src={image} alt={title} width={70} height={70} />
       <h1 className="p-2">{title}</h1>
       <p className="p-2">{description}</p>
     </div>

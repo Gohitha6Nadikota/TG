@@ -3,6 +3,7 @@ import Explore from "@/components/Explore";
 import Explore1 from "@/components/Explore1";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
+import GPTcard from "@/components/GPTcard";
 import Header from "@/components/Header";
 import Security from "@/components/Security";
 import Sliders from "@/components/Sliders";
@@ -16,9 +17,8 @@ export default function Home() {
       <TopContainer />
       <Header />
       <VideoPage />
-      <Explore />
       <Sliders />
-      <Capabilities/>
+      <Capabilities />
       <Security />
       <FAQ />
       <Footer />

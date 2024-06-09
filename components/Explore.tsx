@@ -36,7 +36,7 @@ function Explore() {
             </span>{" "}
             store
           </h1>
-          <ul className="flex flex-col list-disc m-5 p-4">
+          <ul className="flex flex-col list-disc p-4">
             <li className="w-[329px]  font-inter text-base font-normal leading-[19.36px] text-left">
               Interactive Communication: Engage in single or batch calls using
               TOINGG GPT.

@@ -45,9 +45,9 @@ function FAQ() {
   return (
     <div className="m-7 w-[90%] flex flex-col items-center justify-center">
       <h2 className="text-3xl font-bold mb-8">Frequently Asked Questions</h2>
-      <div className="w-full max-w-lg">
+      <div className="w-full max-w-lg ">
         {faqs.map((faq) => (
-          <div key={faq.id} className="mb-6">
+          <div key={faq.id} className="mb-6 md:border md:border-black md:rounded-xl md:p-3">
             <div
               className="flex justify-between items-center cursor-pointer"
               onClick={() => toggleAnswer(faq.id)}
@@ -62,7 +62,7 @@ function FAQ() {
                 <p className="text-base">{faq.answer}</p>
               </div>
             )}
-            {faq.id !== faqs.length && <hr className="my-4" />}
+            {faq.id !== faqs.length && <hr className="my-4 md:hidden" />}
           </div>
         ))}
       </div>
