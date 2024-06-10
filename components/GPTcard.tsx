@@ -27,19 +27,22 @@ const GPTcard: React.FC = () => {
   };
 
   return (
-    <div className="relative mt-[350px]" onClick={handleCardClick}>
+    <div
+      className="relative mt-[350px] m-0 w-[100%] flex items-center justify-center"
+      onClick={handleCardClick}
+    >
       <div
         id="card1"
-        className="absolute inset-0 flex items-center justify-center bg-white shadow-lg rounded-lg"
+        className="absolute inset-0 m-0 flex items-center justify-center bg-white shadow-lg rounded-lg w-[100%]"
       >
-        <Explore/>
+        <Explore />
       </div>
       <div
         id="card2"
-        className="absolute inset-0 flex items-center justify-center bg-white shadow-lg rounded-lg"
-        style={{ opacity: 0, pointerEvents: "none" }}
+        className="absolute inset-0 flex items-center justify-center bg-white shadow-lg rounded-lg w-[100%]"
+        style={{ opacity: 0}}
       >
-        <Explore1/>
+        <Explore1 />
       </div>
     </div>
   );

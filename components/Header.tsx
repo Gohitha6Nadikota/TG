@@ -11,7 +11,7 @@ function NavBar() {
    setIsMenuOpen(!isMenuOpen);
  };
   return (
-    <header className="py-6 w-[100%]">
+    <header className="py-6 w-[100%] m-0">
       <div className="container mx-auto flex items-center justify-between w-[100%]">
         <h1 className="font-inter text-xl font-semibold leading-[21.78px] pl-[15px]">
           Toingg
@@ -40,8 +40,8 @@ function NavBar() {
         </nav>
       </div>
       {isMenuOpen ? (
-        <nav className="md:hidden z-10 bg-gradient-to-b from-[#FEECDF] to-[#D38751] rounded-lg m-5 pt-[30px]">
-          <ul className="md:flex md:space-x-4 md:items-center text-black font-semibold w-[94vw] h-[561px] flex items-center justify-start space-y-[60px] flex-col">
+        <nav className="md:hidden z-10 bg-gradient-to-b from-[#FEECDF] to-[#D38751] rounded-lg m-2 pt-[30px]">
+          <ul className="md:flex md:space-x-4 md:items-center text-black font-semibold w-[94vw] h-[541px] flex items-center justify-start space-y-[60px] flex-col">
             <li className="px-6 py-15 flex items-center justify-between w-[100%]">
               <a href="#">Contact</a>
               <LiaLongArrowAltRightSolid className="mr-3" />
@@ -69,7 +69,7 @@ function NavBar() {
             <span className="font-inter text-4xl font-bold leading-[58.09px] text-left">
               Sales Call
             </span>
-            <div className="flex md:flex-row flex-col justify-center items-center">
+            <div className="flex md:flex-row flex-col justify-center items-center w-[100%]">
               <button className=" bg-gradient-to-br from-[#FFA96B] to-[#995B2E] shadow-md m-5 p-3 rounded-lg md:flex-row flex justify-center flex-col items-center">
                 <h1 className="text-white text-medium md:text-xl font-semibold leading-[21.78px] text-left">
                   Build your own voice agent
@@ -78,8 +78,8 @@ function NavBar() {
                   It&apos;s free
                 </h2>
               </button>
-              <button className="w-[251px] h-[54px] top-[554px] left-[113px] gap-0 border border-black rounded-lg m-5 p-3">
-                <h1 className="text-black">Hear it in action</h1>
+              <button className="w-[50%] max-w-[251px] h-auto top-[554px] left-[113px] gap-0 border border-black rounded-lg m-5 p-3">
+                <h1 className="text-black w-[100%]">Hear it in action</h1>
               </button>
             </div>
           </div>

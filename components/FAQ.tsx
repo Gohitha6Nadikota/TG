@@ -43,7 +43,7 @@ function FAQ() {
   };
 
   return (
-    <div className="m-7 w-[90%] flex flex-col items-center justify-center">
+    <div className="mx-[300px] my-[30px] w-[90%] flex flex-col items-center justify-center">
       <h2 className="text-3xl font-bold mb-8">Frequently Asked Questions</h2>
       <div className="w-full max-w-lg ">
         {faqs.map((faq) => (

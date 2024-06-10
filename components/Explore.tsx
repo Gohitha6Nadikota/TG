@@ -12,12 +12,16 @@ function Explore() {
     slidesToScroll: 1,
   };
   return (
-    <div className="">
-      <div className="w-[88vw] m-[2px] md:m-[50px] bg-[#FEECDF] flex flex-col md:flex-row-reverse md:justify-evenly rounded-2xl min-h-[680px]">
+    <div className="w-[80%] p-[2px] m-0 flex justify-center items-center">
+      <div className="w-[100%] bg-[#FEECDF] flex flex-col md:flex-row-reverse md:justify-evenly rounded-2xl min-h-[680px]">
         <div className="flex items-center justify-center ">
           <video
             className="p-7"
-            style={{ maxWidth: "100%", maxHeight: "auto" }}
+            style={{
+              maxWidth: "100%",
+              maxHeight: "auto",
+              borderRadius: "40px",
+            }}
             controls
             autoPlay
             loop
@@ -51,7 +55,9 @@ function Explore() {
               functionalities.
             </li>
           </ul>
-          <button className=" bg-[#D38751] p-4 text-white">Explore More</button>
+          <button className=" bg-gradient-to-r from-[#FC9850] to-[#AD4C06] p-4 text-white">
+            Explore More
+          </button>
         </div>
       </div>
     </div>

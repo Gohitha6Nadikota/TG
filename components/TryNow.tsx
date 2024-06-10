@@ -6,7 +6,6 @@ import "react-phone-input-2/lib/style.css";
 
 function TryNow() {
   const [phone, setPhone] = useState("");
-
   return (
     <div
       style={{ boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.18)" }}
@@ -37,6 +36,9 @@ function TryNow() {
           }}
           dropdownStyle={{
             background: "#FFD3B4",
+          }}
+          buttonStyle={{
+            background: "transparent !important",
           }}
         />
       </label>

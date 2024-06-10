@@ -2,8 +2,8 @@
 import Image from "next/image";
 function Explore1() {
   return (
-    <div>
-      <div className="w-[88vw] m-[2px] md:m-[50px] bg-[#FEECDF] flex flex-col md:flex-row-reverse md:justify-evenly rounded-2xl h-[680px] items-center justify-start ">
+    <div className="w-[80%] p-[2px] m-0 flex justify-center items-center">
+      <div className="w-[100%] bg-[#FEECDF] flex flex-col md:flex-row-reverse md:justify-evenly rounded-2xl h-[680px] items-center justify-start ">
         <div className="flex items-start h-[400px] bg-black flex-col ">
           <div className="bg-[#bbbbbb] flex flex-row items-center justify-between w-[100%]">
             <p>Python</p>
@@ -74,10 +74,10 @@ function Explore1() {
           </div>
         </div>
         <div className="mt-[150px] md:m-0 flex flex-col h-[200px] items-center justify-evenly">
-          <h1 className="font-inter text-2xl md:text-4xl font-semibold leading-7 text-center">
+          <h1 className="font-inter text-2xl md:text-4xl font-semibold leading-7 text-center p-2">
             Build your own voice agent in
           </h1>
-          <span className="font-inter text-lg md:text-2xl leading-7 text-center inline-block">
+          <span className="font-inter text-lg md:text-2xl leading-7 text-center inline-block p-2">
             just few lines of code
           </span>
         </div>

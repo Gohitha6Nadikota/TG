@@ -2,8 +2,8 @@
 import Image from "next/image";
 function VideoPage() {
     return (
-      <div className="flex justify-center items-center flex-col w-[100%]">
-        <h1 className="pt-[38px] font-inter text-base font-medium leading-[21.78px] text-center text-[#797979] w-[100%]">
+      <div className="flex justify-center items-center flex-col w-[100%] p-2">
+        <h1 className="pt-[38px] font-inter text-base font-medium leading-[21.78px] text-center text-[#797979] w-[100%] ">
           Automate your agent with 5000+ integrations like
         </h1>
         <div className="h-[200px] w-[80%] flex flex-row items-center justify-center space-x-3">

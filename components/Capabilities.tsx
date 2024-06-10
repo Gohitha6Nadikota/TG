@@ -47,7 +47,7 @@ function Capabilities() {
         style={{ boxShadow: "0px 4px 21.8px 0px rgba(93, 93, 93, 0.25)" }}
         className="flex justify-center items-center flex-col w-[100%] mt-[100px] pt-5 bg-gradient-to-br from-orange-100 to-white rounded-lg"
       >
-        <div className="md:max-w-[96vw] max-w-[75vw] m-0 p-0">
+        <div className="md:max-w-[90vw] max-w-[75vw] m-0 p-0">
           <Slider {...settings}>
             {feature.map((feature, index) => (
               <CapabilityBox

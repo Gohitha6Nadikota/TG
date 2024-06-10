@@ -23,10 +23,6 @@ export default function Home() {
       <Security />
       <FAQ />
       <Footer />
-      {/*
-     
-      
-       */}
     </main>
   );
 }
