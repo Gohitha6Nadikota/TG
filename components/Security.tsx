@@ -7,7 +7,7 @@ import { MdOutlineBalance } from "react-icons/md";
 import { AiOutlineAudit } from "react-icons/ai";
 function Security() {
   return (
-    <div className="md:w-[50%] w-[80%] flex justify-center items-center flex-col mt-[100px] md:flex-row space-y-2 space-x-3 m-5">
+    <div className="md:w-[50%] w-[78%] flex justify-center items-center flex-col mt-[100px] md:flex-row space-y-2 space-x-3 m-5">
       <Image
         src={"/assets/Security Shield.png"}
         alt="secure"

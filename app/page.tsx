@@ -17,12 +17,16 @@ export default function Home() {
       <TopContainer />
       <Header />
       <VideoPage />
-      <GPTcard/>
+      <GPTcard />
       <Sliders />
       <Capabilities />
       <Security />
       <FAQ />
       <Footer />
+      {/*
+     
+      
+       */}
     </main>
   );
 }

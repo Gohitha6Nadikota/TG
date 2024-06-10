@@ -13,7 +13,7 @@ function Explore() {
   };
   return (
     <div className="">
-      <div className="w-[90vw] m-[50px] bg-[#FEECDF] flex flex-col md:flex-row-reverse md:justify-evenly rounded-2xl min-h-[680px]">
+      <div className="w-[88vw] m-[2px] md:m-[50px] bg-[#FEECDF] flex flex-col md:flex-row-reverse md:justify-evenly rounded-2xl min-h-[680px]">
         <div className="flex items-center justify-center ">
           <video
             className="p-7"

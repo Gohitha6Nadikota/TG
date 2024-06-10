@@ -3,7 +3,7 @@ import Image from "next/image";
 function Explore1() {
   return (
     <div>
-      <div className="w-[90vw] m-[50px] bg-[#FEECDF] flex flex-col md:flex-row-reverse md:justify-evenly rounded-2xl h-[680px] items-center justify-start ">
+      <div className="w-[88vw] m-[2px] md:m-[50px] bg-[#FEECDF] flex flex-col md:flex-row-reverse md:justify-evenly rounded-2xl h-[680px] items-center justify-start ">
         <div className="flex items-start h-[400px] bg-black flex-col ">
           <div className="bg-[#bbbbbb] flex flex-row items-center justify-between w-[100%]">
             <p>Python</p>
