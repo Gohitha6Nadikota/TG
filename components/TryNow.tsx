@@ -8,7 +8,10 @@ function TryNow() {
   const [phone, setPhone] = useState("");
 
   return (
-    <div className="w-[80%] h-[426px] text-black bg-gradient-to-t from-white to-[#FFD3B4] rounded-[20px] border border-[#E9E9E9] shadow-md m-0 md:m-0 pt-8 flex flex-col justify-center items-center space-y-4">
+    <div
+      style={{ boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.18)" }}
+      className="w-[80%] h-[426px] text-black bg-gradient-to-t from-white to-[#FFD3B4] rounded-[20px] border border-[#E9E9E9] shadow-md m-0 md:m-0 pt-8 flex flex-col justify-center items-center space-y-4"
+    >
       <h1 className="w-32 h-9 text-black font-inter text-2xl font-bold leading-[36.31px] text-left">
         Try Now
       </h1>
